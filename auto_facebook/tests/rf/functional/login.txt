@@ -1,0 +1,10 @@
+*** Settings ***
+Suite Teardown    close browser
+Library           auto_facebook.TwitterAutoLibrary
+Library           Selenium2Library
+Resource          resource.robot
+
+*** Test Cases ***
+valid login
+    Open Browser    https://facebook.com
+    Login    ${valid_username}    ${valid_password}

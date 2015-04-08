@@ -1,0 +1,16 @@
+{% extends "logged_in_base.json" %}
+{% block content %}
+    "TweetBox": {
+        "tweet_box": {
+            "props": {
+                "loc": "#tweet-box-home-timeline"
+            }
+        },
+        "tweet_button": {
+            "props": {
+                "loc":" #timeline div.tweet-button > button > span.button-text.tweeting-text",
+                "visible" :false
+            }
+        }
+    },
+{% endblock %}

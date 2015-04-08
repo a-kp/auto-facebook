@@ -1,2 +1,1 @@
-# auto-facebook
-Automation for facebook
+# auto-twitter

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20150406 23:38:03.733" generator="Robot 2.8.7 (Python 2.7.9 on linux2)">
+<suite source="/home/anupama/projects/auto-twitter/auto_twitter/tests/rf/functional/Tweet.txt" id="s1" name="Tweet">
+<kw type="setup" name="resource.go to twitter and login">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20150406 23:38:04.996" level="INFO">Opening browser 'Firefox' to base url 'http://twitter.com/'</msg>
+<status status="PASS" endtime="20150406 23:38:12.730" starttime="20150406 23:38:04.996"></status>
+</kw>
+<kw type="kw" name="auto_twitter.TwitterAutoLibrary.Login">
+<doc></doc>
+<arguments>
+<arg>${valid_username}</arg>
+<arg>${valid_password}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Capture Page Screenshot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20150406 23:38:13.829" level="FAIL">NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+    at Dispatcher.executeAs/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+    at Resource.prototype.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+    at Dispatcher.prototype.dispatch (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+    at WebDriverServer/&lt;.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+    at createHandlerFunc/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+    at ServerHandler.prototype.handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+    at Connection.prototype.process (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+    at RequestReader.prototype._handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+    at RequestReader.prototype._processBody (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+    at RequestReader.prototype.onInputStreamReady (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1397)</msg>
+<status status="FAIL" endtime="20150406 23:38:13.829" starttime="20150406 23:38:13.674"></status>
+</kw>
+<msg timestamp="20150406 23:38:13.829" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+    at Dispatcher.executeAs/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+    at Resource.prototype.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+    at Dispatcher.prototype.dispatch (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+    at WebDriverServer/&lt;.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+    at createHandlerFunc/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+    at ServerHandler.prototype.handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+    at Connection.prototype.process (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+    at RequestReader.prototype._handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+    at RequestReader.prototype._processBody (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+    at RequestReader.prototype.onInputStreamReady (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1397)</msg>
+<msg timestamp="20150406 23:38:13.830" level="INFO">login load
+LoginForm
+&lt;class 'auto_twitter._components.pre_login_home.login_form
+login_form
+&lt;class 'auto_twitter._components.pre_login_home
+pre_login_home
+package_name pre_login_home class_name : LoginForm 
+cwd :/home/anupama/projects/auto-twitter/auto_twitter/tests 
+project_suite_globals.web_app :None 
+{u'username': {u'props': {u'loc': u'#signin-email'}}, u'password': {u'props': {u'loc': u'#signin-password'}}, u'login_button': {u'props': {u'loc': u'.flex-table-btn'}}, u'login_error_message': {u'props': {u'loc': u'#message-drawer &gt; div &gt; div &gt; span', u'visible': False}}}
+username
+{u'props': {u'loc': u'#signin-email'}}
+{u'loc': u'#signin-email'}
+#signin-email
+locator #signin-email 
+css_type #, uniqueid signin-email
+waiting 30 s for element
+{'_parent': &lt;selenium.webdriver.firefox.webdriver.WebDriver object at 0x7f0a79b41c10&gt;, '_id': u'{b49aa3aa-cb49-4338-82a4-af80376f418c}'}
+password
+{u'props': {u'loc': u'#signin-password'}}
+{u'loc': u'#signin-password'}
+#signin-password
+locator #signin-password 
+css_type #, uniqueid signin-password
+waiting 30 s for element</msg>
+<msg timestamp="20150406 23:38:13.904" level="FAIL">NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+    at Dispatcher.executeAs/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+    at Resource.prototype.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+    at Dispatcher.prototype.dispatch (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+    at WebDriverServer/&lt;.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+    at createHandlerFunc/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+    at ServerHandler.prototype.handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+    at Connection.prototype.process (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+    at RequestReader.prototype._handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+    at RequestReader.prototype._processBody (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+    at RequestReader.prototype.onInputStreamReady (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1397)</msg>
+<status status="FAIL" endtime="20150406 23:38:13.904" starttime="20150406 23:38:12.731"></status>
+</kw>
+<status status="FAIL" endtime="20150406 23:38:13.905" starttime="20150406 23:38:04.995"></status>
+</kw>
+<test id="s1-t1" name="short tweet - below 10 characters">
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150406 23:38:13.906" critical="yes" starttime="20150406 23:38:13.905">Parent suite setup failed:
+NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+    at Dispatcher.executeAs/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+    at Resource.prototype.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+    at Dispatcher.prototype.dispatch (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+    at WebDriverServer/&lt;.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+    at createHandlerFunc/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+    at ServerHandler.prototype.handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+    at Connection.prototype.process (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+    at RequestReader.prototype._handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+    at RequestReader.prototype._processBody (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+    at RequestReader.prototype.onInputStreamReady (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1397)</status>
+</test>
+<test id="s1-t2" name="long tweet - below 140 characters">
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150406 23:38:13.908" critical="yes" starttime="20150406 23:38:13.907">Parent suite setup failed:
+NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+    at Dispatcher.executeAs/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+    at Resource.prototype.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+    at Dispatcher.prototype.dispatch (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+    at WebDriverServer/&lt;.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+    at createHandlerFunc/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+    at ServerHandler.prototype.handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+    at Connection.prototype.process (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+    at RequestReader.prototype._handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+    at RequestReader.prototype._processBody (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+    at RequestReader.prototype.onInputStreamReady (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1397)</status>
+</test>
+<test id="s1-t3" name="longer than allowed tweet - above">
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20150406 23:38:13.909" critical="yes" starttime="20150406 23:38:13.908">Parent suite setup failed:
+NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+    at Dispatcher.executeAs/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+    at Resource.prototype.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+    at Dispatcher.prototype.dispatch (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+    at WebDriverServer/&lt;.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+    at createHandlerFunc/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+    at ServerHandler.prototype.handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+    at Connection.prototype.process (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+    at RequestReader.prototype._handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+    at RequestReader.prototype._processBody (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+    at RequestReader.prototype.onInputStreamReady (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1397)</status>
+</test>
+<kw type="teardown" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20150406 23:38:13.947" starttime="20150406 23:38:13.910"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20150406 23:38:13.948" starttime="20150406 23:38:03.733">Suite setup failed:
+NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+    at Dispatcher.executeAs/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+    at Resource.prototype.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+    at Dispatcher.prototype.dispatch (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+    at WebDriverServer/&lt;.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+    at createHandlerFunc/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+    at ServerHandler.prototype.handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+    at Connection.prototype.process (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+    at RequestReader.prototype._handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+    at RequestReader.prototype._processBody (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+    at RequestReader.prototype.onInputStreamReady (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1397)</status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="0">Critical Tests</stat>
+<stat fail="3" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="3" pass="0" id="s1" name="Tweet">Tweet</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20150406 23:38:04.992" level="ERROR">Error in file '/home/anupama/projects/auto-twitter/auto_twitter/tests/rf/functional/Tweet.txt': Importing test library 'FakerLibrary' failed: ImportError: No module named wrapt
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/FakerLibrary/__init__.py", line 5, in &lt;module&gt;
+    from keywords import FakerKeywords
+  File "/usr/lib/python2.7/site-packages/FakerLibrary/keywords.py", line 12, in &lt;module&gt;
+    import wrapt
+PYTHONPATH:
+  /usr/lib/python2.7/site-packages/robot/libraries
+  /usr/lib/python2.7/site-packages
+  /usr/local/lib/python27.zip
+  /usr/local/lib/python2.7
+  /usr/local/lib/python2.7/plat-linux2
+  /usr/local/lib/python2.7/lib-tk
+  /usr/local/lib/python2.7/lib-old
+  /usr/local/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/site-packages
+  .</msg>
+<msg timestamp="20150406 23:38:13.829" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: Window not found. The browser window may have been closed.
+Stacktrace:
+    at nsCommandProcessor.prototype.execute (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12343)
+    at Dispatcher.executeAs/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9061)
+    at Resource.prototype.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9208)
+    at Dispatcher.prototype.dispatch (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:9155)
+    at WebDriverServer/&lt;.handle (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/driver-component.js:12128)
+    at createHandlerFunc/&lt; (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2058)
+    at ServerHandler.prototype.handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:2391)
+    at Connection.prototype.process (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1227)
+    at RequestReader.prototype._handleResponse (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1681)
+    at RequestReader.prototype._processBody (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1529)
+    at RequestReader.prototype.onInputStreamReady (file:///tmp/tmpsvgKa9/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/httpd.js:1397)</msg>
+</errors>
+</robot>
